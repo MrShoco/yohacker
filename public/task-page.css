@@ -1,0 +1,39 @@
+.sample_inp{
+	display: inline;
+	text-align: left;
+}
+
+.sample_out{
+	text-align: right;
+	display: inline;
+}
+.title{
+	padding-top: 50px;
+	text-align: center;
+}
+.timelimit{
+	text-align: center;
+}
+.fulltask {
+	list-style-type: none;
+	border-top-width: 15px;
+}
+.memorylimit{
+	text-align: center;
+}
+.statement{
+	padding-left: 15px;
+}
+.input{
+	padding-left: 15px;
+}
+
+.output{
+	padding-left: 15px;
+}
+.sample{
+	text-align: center;
+}
+.submit {
+  text-align: right;
+}

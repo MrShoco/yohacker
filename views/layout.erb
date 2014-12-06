@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Yohacker</title>
+		<link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
+		<link href="/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+		<script type="text/javascript" src="/js/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="/bootstrap/js/bootstrap.js"></script>
+		<script type="text/javascript" src="/bootstrap/js/bootstrap-filestyle.min.js"></script>
+		<link href="/home-page.css" rel="stylesheet">
+		<link href="/layout.css" rel="stylesheet">
+		<link href="/tasks-page.css" rel="slylesheet">
+		<link href="/task-page.css" rel="stylesheet">
+	</head>
+
+	<body>
+
+		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-collapse collapse">
+					<a class="navbar-brand" href="#">YoHacker</a>
+					<ul class="nav navbar-nav">
+						
+						<% if @page_name=="home" %>
+							<li class="active"><a href="/">Home</a></li>
+						<% else %>
+							<li><a href="/">Home</a></li>
+						<% end %>
+						<% if @current_user %>
+							<% if @page_name=="tasks" %>
+								<li class="active"><a href="/tasks">Tasks</a></li>
+							<% else %>
+								<li><a href="/tasks">Tasks</a></li>
+              <% end %>
+							<% if @page_name=="submissions" %>
+								<li class="active"><a href="/submissions">Submissions</a></li>
+              <% else %>
+								<li><a href="/submissions">Submissions</a></li>
+              <% end %>
+              <li><a href="/suggest_task">Suggest task</a></li>
+						<% end %>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<% if @current_user %>
+							<li class="ptext">Hello, <%= @current_user.name %> </li>
+							<li> <img src="<%= @current_user.logo %>" width="40" height="40"/>
+              <li><a type="button" href="/sign_out">Sign Out</a></li>
+						<% else %>
+              <li><a type="button" href="/auth/vkontakte">VK</a></li>
+              <li><a type="button" href="/auth/twitter">Twitter</a></li>
+						<% end %>
+					</ul>
+				</div>
+			</div>
+
+    </div>
+      <%= yield %>
+	</body>
+</html>

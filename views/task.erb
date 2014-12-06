@@ -1,0 +1,73 @@
+<% @page_name="task" %>
+<link href="select.css">
+<script src="/js/task.js"></script>
+<div class="container">
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+      <form role="form" action="/submit/<%=@task.id%>" method="post" enctype='multipart/form-data'>
+        <ul class="fulltask">
+          <li class="title"><h2><%= @task.title %></h2></li>
+          <li class="timelimit"><%= @task.time_limit %></li>
+          <li class="memorylimit"><%= @task.memory_limit %></li>
+          <li class="statement" style="padding-top: 15px"><%= @task.statement %></li>
+          <li class="input"><h2>Input</h2><%= @task.input %></li>
+          <li class="output"><h2>Output</h2><%= @task.output %></li>
+          <% unless @samples.empty? %>
+            <li style="padding: 15px">
+              <table class="table table-bordered">
+                <thead>
+                  <th> INPUT </th>
+                  <th> OUTPUT </th>
+                </thead>
+                <tbody>
+                  <% @samples.each do |sample| %>
+                    <tr>
+                      <td><%= sample.input %></td>
+                      <td><%= sample.output %></td>
+                    </tr>
+                  <% end %>
+                </tbody>
+              </table>
+            </li>
+          <% end %>
+          <li align = "center" style="padding: 15px">
+            <div class="row">
+              <div class="col-lg-6">
+                <select class="selectpicker form-control" name="lang">
+                  <option value="9">Visual C 2010</option>
+                  <option value="10">Visual C++ 2010</option>
+                  <option value="11">Visual C# 2010</option>
+                  <option value="14">Go 1.3</option>
+                  <option value="15">VB.NET 2010</option>
+                  <option value="18">Ruby 1.9</option>
+                  <option value="19">Haskell 7.6</option>
+                  <option value="25">GCC 4.9</option>
+                  <option value="26">G++ 4.9</option>
+                  <option value="27">GCC 4.9 C11</option>
+                  <option value="28" selected="">G++ 4.9 C++11</option>
+                  <option value="30">Clang 3.5 C++14</option>
+                  <option value="31">FreePascal 2.6</option>
+                  <option value="32">Java 1.8</option>
+                  <option value="33">Scala 2.11</option>
+                  <option value="34">Python 2.7</option>
+                  <option value="35">Python 3.4</option>
+                </select>
+              </div>
+              <div class="col-lg-1 submit">
+              </div>
+              <div class="col-lg-3 submit">
+                <input name="file" type="file" class="filestyle" data-input="false">
+              </div>
+              <div class="col-lg-2 submit">
+                <button name="submit" class="btn btn-default" type="submit">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </li>
+          <li style="padding: 15px"><textarea name="code" class="form-control" rows="20" padding-top="20px" placeholder="Enter your code"></textarea></li>
+        </ul>
+      </form>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,265 @@
+Writing PID to tmp/pids/thin.pid
+Using rack adapter
+Thin web server (v1.6.3 codename Protein Powder)
+Maximum connections set to 1024
+Listening on 0.0.0.0:3000, CTRL+C to stop
+D, [2014-12-04T00:53:00.264157 #22497] DEBUG -- :   [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+127.0.0.1 - - [04/Dec/2014 00:53:00] "GET / HTTP/1.1" 200 1773 0.0325
+127.0.0.1 - - [04/Dec/2014 00:53:00] "GET /js/jquery-2.1.1.min.js HTTP/1.1" 200 84245 0.0023
+D, [2014-12-04T00:53:00.515822 #22497] DEBUG -- :   [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+127.0.0.1 - - [04/Dec/2014 00:53:00] "GET /bootstrap/css/bootstrap-responsive.css HTTP/1.1" 404 475 0.0054
+127.0.0.1 - - [04/Dec/2014 00:53:00] "GET /bootstrap/js/bootstrap-filestyle.min.js HTTP/1.1" 304 - 0.0023
+Waiting for 2 connection(s) to finish, can take up to 30 sec, CTRL+C to stop now
+Exiting!
+Writing PID to tmp/pids/thin.pid
+Using rack adapter
+Thin web server (v1.6.3 codename Protein Powder)
+Maximum connections set to 1024
+Listening on 0.0.0.0:3000, CTRL+C to stop
+D, [2014-12-04T00:54:51.902963 #22638] DEBUG -- :   [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+127.0.0.1 - - [04/Dec/2014 00:54:51] "GET / HTTP/1.1" 200 1773 0.0337
+127.0.0.1 - - [04/Dec/2014 00:54:52] "GET /bootstrap/css/bootstrap.css HTTP/1.1" 304 - 0.0021
+D, [2014-12-04T00:54:52.200379 #22638] DEBUG -- :   [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+127.0.0.1 - - [04/Dec/2014 00:54:52] "GET /bootstrap/css/bootstrap-responsive.css HTTP/1.1" 404 475 0.0047
+127.0.0.1 - - [04/Dec/2014 00:54:52] "GET /js/jquery-2.1.1.min.js HTTP/1.1" 304 - 0.0015
+127.0.0.1 - - [04/Dec/2014 00:54:52] "GET /bootstrap/js/bootstrap.js HTTP/1.1" 304 - 0.0013
+127.0.0.1 - - [04/Dec/2014 00:54:52] "GET /bootstrap/js/bootstrap-filestyle.min.js HTTP/1.1" 304 - 0.0014
+127.0.0.1 - - [04/Dec/2014 00:54:52] "GET /home-page.css HTTP/1.1" 304 - 0.0014
+127.0.0.1 - - [04/Dec/2014 00:54:52] "GET /layout.css HTTP/1.1" 304 - 0.0022
+127.0.0.1 - - [04/Dec/2014 00:54:52] "GET /task-page.css HTTP/1.1" 304 - 0.0021
+D, [2014-12-04T00:54:55.106266 #22638] DEBUG -- :   [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+D, [2014-12-04T00:54:55.111146 #22638] DEBUG -- :   [1m[35m (1.8ms)[0m  SELECT COUNT(*) FROM "tasks"
+D, [2014-12-04T00:54:55.113395 #22638] DEBUG -- :   [1m[36mTask Load (0.3ms)[0m  [1mSELECT  "tasks".* FROM "tasks"   ORDER BY "tasks"."id" ASC LIMIT 1 OFFSET 87[0m
+127.0.0.1 - - [04/Dec/2014 00:54:55] "GET /suggest_task HTTP/1.1" 302 - 0.0218
+D, [2014-12-04T00:54:55.136753 #22638] DEBUG -- :   [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+D, [2014-12-04T00:54:55.138047 #22638] DEBUG -- :   [1m[36mTask Load (0.3ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2098]]
+SyntaxError - /home/shocoladka/progs/hackaton/yohacker/views/task.erb:60: syntax error, unexpected ')'
+...:upload}, multipart: true) do ).to_s)
+...                               ^
+/home/shocoladka/progs/hackaton/yohacker/views/task.erb:78: syntax error, unexpected keyword_ensure, expecting ')'
+/home/shocoladka/progs/hackaton/yohacker/views/task.erb:80: syntax error, unexpected keyword_end, expecting ')':
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/tilt-1.4.1/lib/tilt/template.rb:264:in `class_eval'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/tilt-1.4.1/lib/tilt/template.rb:264:in `compile_template_method'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/tilt-1.4.1/lib/tilt/template.rb:240:in `compiled_method'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/tilt-1.4.1/lib/tilt/template.rb:169:in `evaluate'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/tilt-1.4.1/lib/tilt/template.rb:103:in `render'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/sinatra-1.4.5/lib/sinatra/base.rb:814:in `render'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/sinatra-1.4.5/lib/sinatra/base.rb:665:in `erb'
+	/home/shocoladka/progs/hackaton/yohacker/app.rb:59:in `block in <top (required)>'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/sinatra-1.4.5/lib/sinatra/base.rb:1603:in `call'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/sinatra-1.4.5/lib/sinatra/base.rb:1603:in `block in compile!'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `[]'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `block (3 levels) in route!'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/sinatra-1.4.5/lib/sinatra/base.rb:985:in `route_eval'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/sinatra-1.4.5/lib/sinatra/base.rb:966:in `block (2 levels) in route!'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/sinatra-1.4.5/lib/sinatra/base.rb:1006:in `block in process_route'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/sinatra-1.4.5/lib/sinatra/base.rb:1004:in `catch'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/sinatra-1.4.5/lib/sinatra/base.rb:1004:in `process_route'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/sinatra-1.4.5/lib/sinatra/base.rb:964:in `block in route!'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/sinatra-1.4.5/lib/sinatra/base.rb:963:in `each'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/sinatra-1.4.5/lib/sinatra/base.rb:963:in `route!'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/sinatra-1.4.5/lib/sinatra/base.rb:1076:in `block in dispatch!'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `block in invoke'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `catch'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `invoke'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/sinatra-1.4.5/lib/sinatra/base.rb:1073:in `dispatch!'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/sinatra-1.4.5/lib/sinatra/base.rb:898:in `block in call!'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `block in invoke'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `catch'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/sinatra-1.4.5/lib/sinatra/base.rb:1058:in `invoke'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/sinatra-1.4.5/lib/sinatra/base.rb:898:in `call!'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/sinatra-1.4.5/lib/sinatra/base.rb:886:in `call'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/omniauth-1.2.2/lib/omniauth/strategy.rb:186:in `call!'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/omniauth-1.2.2/lib/omniauth/strategy.rb:164:in `call'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/omniauth-1.2.2/lib/omniauth/strategy.rb:186:in `call!'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/omniauth-1.2.2/lib/omniauth/strategy.rb:164:in `call'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/omniauth-1.2.2/lib/omniauth/builder.rb:59:in `call'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/logger.rb:15:in `call'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/sinatra-1.4.5/lib/sinatra/base.rb:217:in `call'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/sinatra-1.4.5/lib/sinatra/base.rb:210:in `call'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/sinatra-1.4.5/lib/sinatra/show_exceptions.rb:21:in `call'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/sinatra-1.4.5/lib/sinatra/base.rb:180:in `call'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/sinatra-1.4.5/lib/sinatra/base.rb:2014:in `call'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `block in call'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/sinatra-1.4.5/lib/sinatra/base.rb:1788:in `synchronize'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/sinatra-1.4.5/lib/sinatra/base.rb:1478:in `call'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/urlmap.rb:65:in `block in call'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/urlmap.rb:50:in `each'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/rack-1.5.2/lib/rack/urlmap.rb:50:in `call'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/thin-1.6.3/lib/thin/connection.rb:86:in `block in pre_process'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/thin-1.6.3/lib/thin/connection.rb:84:in `catch'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/thin-1.6.3/lib/thin/connection.rb:84:in `pre_process'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/thin-1.6.3/lib/thin/connection.rb:53:in `process'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/thin-1.6.3/lib/thin/connection.rb:39:in `receive_data'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/eventmachine-1.0.3/lib/eventmachine.rb:187:in `run_machine'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/eventmachine-1.0.3/lib/eventmachine.rb:187:in `run'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/thin-1.6.3/lib/thin/backends/base.rb:73:in `start'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/thin-1.6.3/lib/thin/server.rb:162:in `start'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/thin-1.6.3/lib/thin/controllers/controller.rb:87:in `start'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/thin-1.6.3/lib/thin/runner.rb:200:in `run_command'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/thin-1.6.3/lib/thin/runner.rb:156:in `run!'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/gems/thin-1.6.3/bin/thin:6:in `<top (required)>'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/bin/thin:23:in `load'
+	/home/shocoladka/.rvm/gems/ruby-2.0.0-p451/bin/thin:23:in `<main>'
+D, [2014-12-04T00:55:15.350076 #22638] DEBUG -- :   [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+127.0.0.1 - - [04/Dec/2014 00:55:15] "GET / HTTP/1.1" 200 1773 0.0101
+127.0.0.1 - - [04/Dec/2014 00:55:15] "GET /bootstrap/css/bootstrap.css HTTP/1.1" 304 - 0.0031
+D, [2014-12-04T00:55:15.573713 #22638] DEBUG -- :   [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+127.0.0.1 - - [04/Dec/2014 00:55:15] "GET /bootstrap/css/bootstrap-responsive.css HTTP/1.1" 404 475 0.0061
+127.0.0.1 - - [04/Dec/2014 00:55:15] "GET /js/jquery-2.1.1.min.js HTTP/1.1" 304 - 0.0022
+127.0.0.1 - - [04/Dec/2014 00:55:15] "GET /bootstrap/js/bootstrap.js HTTP/1.1" 304 - 0.0015
+127.0.0.1 - - [04/Dec/2014 00:55:15] "GET /bootstrap/js/bootstrap-filestyle.min.js HTTP/1.1" 304 - 0.0020
+127.0.0.1 - - [04/Dec/2014 00:55:15] "GET /home-page.css HTTP/1.1" 304 - 0.0020
+127.0.0.1 - - [04/Dec/2014 00:55:15] "GET /layout.css HTTP/1.1" 304 - 0.0022
+127.0.0.1 - - [04/Dec/2014 00:55:15] "GET /task-page.css HTTP/1.1" 304 - 0.0023
+D, [2014-12-04T00:56:36.371256 #22638] DEBUG -- :   [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+127.0.0.1 - - [04/Dec/2014 00:56:36] "GET / HTTP/1.1" 200 1773 0.0069
+127.0.0.1 - - [04/Dec/2014 00:56:36] "GET /bootstrap/css/bootstrap.css HTTP/1.1" 304 - 0.0030
+D, [2014-12-04T00:56:36.661628 #22638] DEBUG -- :   [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+127.0.0.1 - - [04/Dec/2014 00:56:36] "GET /bootstrap/css/bootstrap-responsive.css HTTP/1.1" 404 475 0.0051
+127.0.0.1 - - [04/Dec/2014 00:56:36] "GET /js/jquery-2.1.1.min.js HTTP/1.1" 304 - 0.0022
+127.0.0.1 - - [04/Dec/2014 00:56:36] "GET /bootstrap/js/bootstrap.js HTTP/1.1" 304 - 0.0022
+127.0.0.1 - - [04/Dec/2014 00:56:36] "GET /bootstrap/js/bootstrap-filestyle.min.js HTTP/1.1" 304 - 0.0021
+127.0.0.1 - - [04/Dec/2014 00:56:36] "GET /home-page.css HTTP/1.1" 304 - 0.0023
+127.0.0.1 - - [04/Dec/2014 00:56:36] "GET /task-page.css HTTP/1.1" 304 - 0.0023
+127.0.0.1 - - [04/Dec/2014 00:56:36] "GET /layout.css HTTP/1.1" 304 - 0.0024
+D, [2014-12-04T00:56:37.756182 #22638] DEBUG -- :   [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+D, [2014-12-04T00:56:37.758326 #22638] DEBUG -- :   [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "tasks"[0m
+D, [2014-12-04T00:56:37.759543 #22638] DEBUG -- :   [1m[35mTask Load (0.4ms)[0m  SELECT  "tasks".* FROM "tasks"   ORDER BY "tasks"."id" ASC LIMIT 1 OFFSET 340
+127.0.0.1 - - [04/Dec/2014 00:56:37] "GET /suggest_task HTTP/1.1" 302 - 0.0075
+D, [2014-12-04T00:56:37.773098 #22638] DEBUG -- :   [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+D, [2014-12-04T00:56:37.774395 #22638] DEBUG -- :   [1m[35mTask Load (0.2ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2351]]
+D, [2014-12-04T00:56:37.847163 #22638] DEBUG -- :   [1m[36mTaskSample Exists (53.1ms)[0m  [1mSELECT  1 AS one FROM "task_samples"  WHERE "task_samples"."task_id" = ? LIMIT 1[0m  [["task_id", 2351]]
+D, [2014-12-04T00:56:37.849223 #22638] DEBUG -- :   [1m[35mTaskSample Load (0.9ms)[0m  SELECT "task_samples".* FROM "task_samples"  WHERE "task_samples"."task_id" = ?  [["task_id", 2351]]
+127.0.0.1 - - [04/Dec/2014 00:56:37] "GET /task/2351 HTTP/1.1" 200 7613 0.0881
+D, [2014-12-04T00:56:38.050861 #22638] DEBUG -- :   [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+127.0.0.1 - - [04/Dec/2014 00:56:38] "GET /bootstrap/css/bootstrap-responsive.css HTTP/1.1" 404 475 0.0072
+127.0.0.1 - - [04/Dec/2014 00:56:38] "GET /js/task.js HTTP/1.1" 200 38 0.0026
+D, [2014-12-04T00:56:39.908371 #22638] DEBUG -- :   [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+D, [2014-12-04T00:56:39.919398 #22638] DEBUG -- :   [1m[36mSubmission Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "submissions"  WHERE "submissions"."user_id" = ? LIMIT 1[0m  [["user_id", 2]]
+D, [2014-12-04T00:56:39.921112 #22638] DEBUG -- :   [1m[35mSubmission Load (0.4ms)[0m  SELECT "submissions".* FROM "submissions"  WHERE "submissions"."user_id" = ?  [["user_id", 2]]
+D, [2014-12-04T00:56:39.934921 #22638] DEBUG -- :   [1m[36mTask Load (0.2ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2011]]
+D, [2014-12-04T00:56:39.935980 #22638] DEBUG -- :   [1m[35mTask Load (0.1ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2011]]
+D, [2014-12-04T00:56:39.936832 #22638] DEBUG -- :   [1m[36mTask Load (0.1ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2011]]
+D, [2014-12-04T00:56:39.937636 #22638] DEBUG -- :   [1m[35mTask Load (0.1ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2011]]
+D, [2014-12-04T00:56:39.938446 #22638] DEBUG -- :   [1m[36mTask Load (0.1ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2011]]
+D, [2014-12-04T00:56:39.939263 #22638] DEBUG -- :   [1m[35mTask Load (0.1ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2011]]
+D, [2014-12-04T00:56:39.940047 #22638] DEBUG -- :   [1m[36mTask Load (0.1ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2011]]
+D, [2014-12-04T00:56:39.940822 #22638] DEBUG -- :   [1m[35mTask Load (0.1ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2011]]
+D, [2014-12-04T00:56:39.941601 #22638] DEBUG -- :   [1m[36mTask Load (0.1ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2011]]
+D, [2014-12-04T00:56:39.942394 #22638] DEBUG -- :   [1m[35mTask Load (0.1ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2011]]
+D, [2014-12-04T00:56:39.943310 #22638] DEBUG -- :   [1m[36mTask Load (0.1ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2011]]
+D, [2014-12-04T00:56:39.944502 #22638] DEBUG -- :   [1m[35mTask Load (0.2ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2011]]
+D, [2014-12-04T00:56:39.945369 #22638] DEBUG -- :   [1m[36mTask Load (0.1ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2011]]
+D, [2014-12-04T00:56:39.946164 #22638] DEBUG -- :   [1m[35mTask Load (0.1ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2011]]
+D, [2014-12-04T00:56:39.946951 #22638] DEBUG -- :   [1m[36mTask Load (0.1ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2011]]
+D, [2014-12-04T00:56:39.947798 #22638] DEBUG -- :   [1m[35mTask Load (0.1ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2011]]
+D, [2014-12-04T00:56:39.948656 #22638] DEBUG -- :   [1m[36mTask Load (0.1ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2011]]
+D, [2014-12-04T00:56:39.949442 #22638] DEBUG -- :   [1m[35mTask Load (0.1ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2011]]
+D, [2014-12-04T00:56:39.950219 #22638] DEBUG -- :   [1m[36mTask Load (0.1ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2011]]
+D, [2014-12-04T00:56:39.950990 #22638] DEBUG -- :   [1m[35mTask Load (0.1ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2011]]
+D, [2014-12-04T00:56:39.951807 #22638] DEBUG -- :   [1m[36mTask Load (0.1ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2011]]
+D, [2014-12-04T00:56:39.952581 #22638] DEBUG -- :   [1m[35mTask Load (0.1ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2011]]
+D, [2014-12-04T00:56:39.953357 #22638] DEBUG -- :   [1m[36mTask Load (0.1ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2011]]
+D, [2014-12-04T00:56:39.954129 #22638] DEBUG -- :   [1m[35mTask Load (0.1ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2011]]
+127.0.0.1 - - [04/Dec/2014 00:56:39] "GET /submissions HTTP/1.1" 200 5656 0.0521
+D, [2014-12-04T00:56:40.209047 #22638] DEBUG -- :   [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+127.0.0.1 - - [04/Dec/2014 00:56:40] "GET /bootstrap/css/bootstrap-responsive.css HTTP/1.1" 404 475 0.0054
+D, [2014-12-04T00:56:41.348866 #22638] DEBUG -- :   [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+D, [2014-12-04T00:56:41.350451 #22638] DEBUG -- :   [1m[36mTask Load (0.2ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2011]]
+D, [2014-12-04T00:56:41.358733 #22638] DEBUG -- :   [1m[35mTaskSample Exists (0.2ms)[0m  SELECT  1 AS one FROM "task_samples"  WHERE "task_samples"."task_id" = ? LIMIT 1  [["task_id", 2011]]
+D, [2014-12-04T00:56:41.360121 #22638] DEBUG -- :   [1m[36mTaskSample Load (0.6ms)[0m  [1mSELECT "task_samples".* FROM "task_samples"  WHERE "task_samples"."task_id" = ?[0m  [["task_id", 2011]]
+127.0.0.1 - - [04/Dec/2014 00:56:41] "GET /task/2011 HTTP/1.1" 200 4704 0.0176
+D, [2014-12-04T00:56:41.572768 #22638] DEBUG -- :   [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+127.0.0.1 - - [04/Dec/2014 00:56:41] "GET /bootstrap/css/bootstrap-responsive.css HTTP/1.1" 404 475 0.0048
+D, [2014-12-04T00:56:55.489082 #22638] DEBUG -- :   [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+D, [2014-12-04T00:56:55.490382 #22638] DEBUG -- :   [1m[35mTask Load (0.2ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2011]]
+"fadfsadfsdfsadfsa"
+"a+b.cpp"
+D, [2014-12-04T00:56:55.493329 #22638] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+D, [2014-12-04T00:56:55.501134 #22638] DEBUG -- :   [1m[35mSQL (0.6ms)[0m  INSERT INTO "submissions" ("code", "created_at", "lang", "task_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)  [["code", ""], ["created_at", "2014-12-03 20:56:55.498155"], ["lang", "28"], ["task_id", 2011], ["updated_at", "2014-12-03 20:56:55.498155"], ["user_id", 2]]
+D, [2014-12-04T00:56:55.510637 #22638] DEBUG -- :   [1m[36m (8.8ms)[0m  [1mcommit transaction[0m
+127.0.0.1 - - [04/Dec/2014 00:56:55] "POST /submit/2011 HTTP/1.1" 303 - 0.0279
+D, [2014-12-04T00:56:55.525288 #22638] DEBUG -- :   [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+D, [2014-12-04T00:56:55.530449 #22638] DEBUG -- :   [1m[36mSubmission Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "submissions"  WHERE "submissions"."user_id" = ? LIMIT 1[0m  [["user_id", 2]]
+D, [2014-12-04T00:56:55.532385 #22638] DEBUG -- :   [1m[35mSubmission Load (0.4ms)[0m  SELECT "submissions".* FROM "submissions"  WHERE "submissions"."user_id" = ?  [["user_id", 2]]
+D, [2014-12-04T00:56:55.536044 #22638] DEBUG -- :   [1m[36mTask Load (0.2ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2011]]
+D, [2014-12-04T00:56:55.537532 #22638] DEBUG -- :   [1m[35mTask Load (0.2ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2011]]
+D, [2014-12-04T00:56:55.539385 #22638] DEBUG -- :   [1m[36mTask Load (0.2ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2011]]
+D, [2014-12-04T00:56:55.540349 #22638] DEBUG -- :   [1m[35mTask Load (0.1ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2011]]
+D, [2014-12-04T00:56:55.541161 #22638] DEBUG -- :   [1m[36mTask Load (0.1ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2011]]
+D, [2014-12-04T00:56:55.541953 #22638] DEBUG -- :   [1m[35mTask Load (0.1ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2011]]
+D, [2014-12-04T00:56:55.542784 #22638] DEBUG -- :   [1m[36mTask Load (0.1ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2011]]
+D, [2014-12-04T00:56:55.543581 #22638] DEBUG -- :   [1m[35mTask Load (0.1ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2011]]
+D, [2014-12-04T00:56:55.544430 #22638] DEBUG -- :   [1m[36mTask Load (0.1ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2011]]
+D, [2014-12-04T00:56:55.545226 #22638] DEBUG -- :   [1m[35mTask Load (0.1ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2011]]
+D, [2014-12-04T00:56:55.546003 #22638] DEBUG -- :   [1m[36mTask Load (0.1ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2011]]
+D, [2014-12-04T00:56:55.546776 #22638] DEBUG -- :   [1m[35mTask Load (0.1ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2011]]
+D, [2014-12-04T00:56:55.547639 #22638] DEBUG -- :   [1m[36mTask Load (0.1ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2011]]
+D, [2014-12-04T00:56:55.548414 #22638] DEBUG -- :   [1m[35mTask Load (0.1ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2011]]
+D, [2014-12-04T00:56:55.549192 #22638] DEBUG -- :   [1m[36mTask Load (0.1ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2011]]
+D, [2014-12-04T00:56:55.549956 #22638] DEBUG -- :   [1m[35mTask Load (0.1ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2011]]
+D, [2014-12-04T00:56:55.550720 #22638] DEBUG -- :   [1m[36mTask Load (0.1ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2011]]
+D, [2014-12-04T00:56:55.551627 #22638] DEBUG -- :   [1m[35mTask Load (0.2ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2011]]
+D, [2014-12-04T00:56:55.552418 #22638] DEBUG -- :   [1m[36mTask Load (0.1ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2011]]
+D, [2014-12-04T00:56:55.553197 #22638] DEBUG -- :   [1m[35mTask Load (0.1ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2011]]
+D, [2014-12-04T00:56:55.553964 #22638] DEBUG -- :   [1m[36mTask Load (0.1ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2011]]
+D, [2014-12-04T00:56:55.554731 #22638] DEBUG -- :   [1m[35mTask Load (0.1ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2011]]
+D, [2014-12-04T00:56:55.555519 #22638] DEBUG -- :   [1m[36mTask Load (0.1ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2011]]
+D, [2014-12-04T00:56:55.556297 #22638] DEBUG -- :   [1m[35mTask Load (0.1ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2011]]
+D, [2014-12-04T00:56:55.557063 #22638] DEBUG -- :   [1m[36mTask Load (0.1ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2011]]
+127.0.0.1 - - [04/Dec/2014 00:56:55] "GET /submissions HTTP/1.1" 200 5805 0.0384
+D, [2014-12-04T00:56:55.754583 #22638] DEBUG -- :   [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+127.0.0.1 - - [04/Dec/2014 00:56:55] "GET /bootstrap/css/bootstrap-responsive.css HTTP/1.1" 404 475 0.0058
+D, [2014-12-04T00:57:06.391141 #22638] DEBUG -- :   [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+D, [2014-12-04T00:57:06.397015 #22638] DEBUG -- :   [1m[35mSubmission Exists (0.3ms)[0m  SELECT  1 AS one FROM "submissions"  WHERE "submissions"."user_id" = ? LIMIT 1  [["user_id", 2]]
+D, [2014-12-04T00:57:06.398935 #22638] DEBUG -- :   [1m[36mSubmission Load (0.5ms)[0m  [1mSELECT "submissions".* FROM "submissions"  WHERE "submissions"."user_id" = ?[0m  [["user_id", 2]]
+D, [2014-12-04T00:57:06.401609 #22638] DEBUG -- :   [1m[35mTask Load (0.1ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2011]]
+D, [2014-12-04T00:57:06.402782 #22638] DEBUG -- :   [1m[36mTask Load (0.1ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2011]]
+D, [2014-12-04T00:57:06.404090 #22638] DEBUG -- :   [1m[35mTask Load (0.2ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2011]]
+D, [2014-12-04T00:57:06.405701 #22638] DEBUG -- :   [1m[36mTask Load (0.2ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2011]]
+D, [2014-12-04T00:57:06.407305 #22638] DEBUG -- :   [1m[35mTask Load (0.2ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2011]]
+D, [2014-12-04T00:57:06.408840 #22638] DEBUG -- :   [1m[36mTask Load (0.2ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2011]]
+D, [2014-12-04T00:57:06.410579 #22638] DEBUG -- :   [1m[35mTask Load (0.2ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2011]]
+D, [2014-12-04T00:57:06.412105 #22638] DEBUG -- :   [1m[36mTask Load (0.1ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2011]]
+D, [2014-12-04T00:57:06.413096 #22638] DEBUG -- :   [1m[35mTask Load (0.1ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2011]]
+D, [2014-12-04T00:57:06.413923 #22638] DEBUG -- :   [1m[36mTask Load (0.1ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2011]]
+D, [2014-12-04T00:57:06.414742 #22638] DEBUG -- :   [1m[35mTask Load (0.1ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2011]]
+D, [2014-12-04T00:57:06.415606 #22638] DEBUG -- :   [1m[36mTask Load (0.1ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2011]]
+D, [2014-12-04T00:57:06.416412 #22638] DEBUG -- :   [1m[35mTask Load (0.1ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2011]]
+D, [2014-12-04T00:57:06.417200 #22638] DEBUG -- :   [1m[36mTask Load (0.1ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2011]]
+D, [2014-12-04T00:57:06.418075 #22638] DEBUG -- :   [1m[35mTask Load (0.1ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2011]]
+D, [2014-12-04T00:57:06.418961 #22638] DEBUG -- :   [1m[36mTask Load (0.1ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2011]]
+D, [2014-12-04T00:57:06.419802 #22638] DEBUG -- :   [1m[35mTask Load (0.1ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2011]]
+D, [2014-12-04T00:57:06.420581 #22638] DEBUG -- :   [1m[36mTask Load (0.1ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2011]]
+D, [2014-12-04T00:57:06.421355 #22638] DEBUG -- :   [1m[35mTask Load (0.1ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2011]]
+D, [2014-12-04T00:57:06.422127 #22638] DEBUG -- :   [1m[36mTask Load (0.1ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2011]]
+D, [2014-12-04T00:57:06.422909 #22638] DEBUG -- :   [1m[35mTask Load (0.1ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2011]]
+D, [2014-12-04T00:57:06.423724 #22638] DEBUG -- :   [1m[36mTask Load (0.1ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2011]]
+D, [2014-12-04T00:57:06.424502 #22638] DEBUG -- :   [1m[35mTask Load (0.1ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2011]]
+D, [2014-12-04T00:57:06.425275 #22638] DEBUG -- :   [1m[36mTask Load (0.1ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2011]]
+D, [2014-12-04T00:57:06.426042 #22638] DEBUG -- :   [1m[35mTask Load (0.1ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2011]]
+127.0.0.1 - - [04/Dec/2014 00:57:06] "GET /submissions HTTP/1.1" 200 5805 0.0414
+127.0.0.1 - - [04/Dec/2014 00:57:06] "GET /bootstrap/css/bootstrap.css HTTP/1.1" 304 - 0.0026
+D, [2014-12-04T00:57:06.635079 #22638] DEBUG -- :   [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+127.0.0.1 - - [04/Dec/2014 00:57:06] "GET /bootstrap/css/bootstrap-responsive.css HTTP/1.1" 404 475 0.0049
+127.0.0.1 - - [04/Dec/2014 00:57:06] "GET /js/jquery-2.1.1.min.js HTTP/1.1" 304 - 0.0024
+127.0.0.1 - - [04/Dec/2014 00:57:06] "GET /bootstrap/js/bootstrap.js HTTP/1.1" 304 - 0.0023
+127.0.0.1 - - [04/Dec/2014 00:57:06] "GET /bootstrap/js/bootstrap-filestyle.min.js HTTP/1.1" 304 - 0.0019
+127.0.0.1 - - [04/Dec/2014 00:57:06] "GET /home-page.css HTTP/1.1" 304 - 0.0014
+127.0.0.1 - - [04/Dec/2014 00:57:06] "GET /task-page.css HTTP/1.1" 304 - 0.0014
+127.0.0.1 - - [04/Dec/2014 00:57:06] "GET /layout.css HTTP/1.1" 304 - 0.0018
+Exiting!
